@@ -1,87 +1,25 @@
-[![SWUbanner](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner-direct.svg)](https://vshymanskyy.github.io/StandWithUkraine)
+![alt text](https://hackster.imgix.net/uploads/attachments/1452202/image_gtg3pui50c.png?auto=compress%2Cformat&w=740&h=555&fit=max)
 
-# Blynk C++ Library [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Build%20your%20IoT%20App%20in%20minutes,%20right%20on%20your%20smartphone!&url=https://github.com/blynkkk/blynk-library&via=blynk_app&hashtags=IoT,iOS,Android,Arduino,ESP8266,ESP32,RaspberryPi)
+For all the IoT makers and newbies, we very well know and understand the Blynk IoT Platform and how to use the Blynk 1.0 (Legacy version). But as Blynk has upgraded to Blynk 2.0 there were many changes made in the new documentation which are not yet noted or maybe missed out.This article points to understanding and implementing not only the Dashboard usage of both Blynk 1.0 and 2.0 but also all the API endpoints that make its usage of it functional. Blynk is a full suite of software required to prototype, deploy, and remotely manage connected electronic devices at any scale: from personal IoT projects to millions of commercial connected products.
+The above text is an official statement/description of what Blynk really is, and what it serves as a solution for the General Public as a tool.
 
-[![GitHub version](https://img.shields.io/github/release/blynkkk/blynk-library.svg)](https://github.com/blynkkk/blynk-library/releases/latest)
-[![GitHub download](https://img.shields.io/github/downloads/blynkkk/blynk-library/total.svg)](https://github.com/blynkkk/blynk-library/releases/latest)
-[![GitHub stars](https://img.shields.io/github/stars/blynkkk/blynk-library.svg)](https://github.com/blynkkk/blynk-library/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/blynkkk/blynk-library.svg)](https://github.com/blynkkk/blynk-library/issues)
-[![Build Status](https://img.shields.io/travis/blynkkk/blynk-library.svg)](https://travis-ci.org/blynkkk/blynk-library)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/blynkkk/blynk-library/blob/master/LICENSE)
+Think about a Plug-and-Play IoT Platform for the IoT Developers, to build and develop IoT applications on-the-go. Blynk is exactly the same, with easy-to-make buttons, visualization charts, and many more from it.The ability to use drag-and-drop widgets has made the IoT Platform grow even more. In only a matter of seconds, we can control our Wireless Board from the Web Dashboard, as well as Mobile App.
 
-If you like **Blynk** - give it a star, or fork it and contribute! 
-[![GitHub stars](https://img.shields.io/github/stars/blynkkk/blynk-library.svg?style=social&label=Star)](https://github.com/blynkkk/blynk-library/stargazers) 
-[![GitHub forks](https://img.shields.io/github/forks/blynkkk/blynk-library.svg?style=social&label=Fork)](https://github.com/blynkkk/blynk-library/network)
-__________
+![alt text](https://hackster.imgix.net/uploads/attachments/1508803/image_HXj0dhYKkz.png?auto=compress%2Cformat&w=740&h=555&fit=max)
 
-### Blynk is a unique IoT platform for connecting any hardware to the cloud, designing apps to control them, and managing your deployed products at scale.
+Back in 2016, when Blynk introduced multiple features like the ability to use the Library file and directly connect any WiFi-enabled board to the Blynk Cloud. Since then the Cloud was LIVE and had a pretty decent latency. Which caught the attention of many IoT developers or learners. It was this period of time when people started building many projects on this platform and the world of IoT became a thing for people.
 
-- With Blynk Library you can connect **over 400 hardware models** (including ESP8266, ESP32, NodeMCU, all Arduinos, Raspberry Pi, Particle, Texas Instruments, etc.)to the Blynk Cloud.
-Full list of supported hardware can be found [here](https://github.com/blynkkk/blynkkk.github.io/blob/master/SupportedHardware.md).
+Since then Blynk started documenting all the procedures, and steps required to use their platform.From this App, with each new project, we are provided with an Auth Token which we can use to access the Blynk Cloud and its services. Either we can use the App to control/monitor our Wireless devices, or use the Auth Token to access the LIVE data using API requests.
 
-- With Blynk apps for **iOS** and **Android** apps you can easily drag-n-drop graphic interfaces for any DIY or commercial project. It's a pure WYSIWG experience: no coding on iOS or Android required. 
 
-- Hardware can connect to Blynk Cloud (open-source server) over the Internet using hardware connectivity available on your board (like ESP32), or with the use of various shields (Ethernet, WiFi, GSM, LTE, etc). Blynk Cloud is available for every user of Blynk **for free**. Direct connection over Bluetooth is also possible. 
+![alt text](https://hackster.imgix.net/uploads/attachments/1508970/image_6hzC8KvDSQ.png?auto=compress%2Cformat&w=740&h=555&fit=max)
 
-![Blynk Banner](https://github.com/blynkkk/blynkkk.github.io/raw/master/images/GithubBanner.jpg)
+With Blynk 2.0, which includes many features as listed. Another feature is also present, which allows for reduction in uploading code when change in network is observed frequently. Uploading a new code to the Board without having to reconnect to a PC, using the Edgent OTA feature. We can directly get started with the Example provided by them. In the Arduino IDE, navigate to Files > Examples > Blynk > Blynk.Edgent > Edgent_ESP32 - It will open default code.
 
-## Downloads
+Here, only make the changes in the Edgent_ESP32.h file, like adding Virtual Pins to be controlled or monitored, widget properties, timers, etc
 
-**Blynk [Arduino Library](https://github.com/blynkkk/blynk-library/releases/latest)**
+![alt text](https://hackster.imgix.net/uploads/attachments/1518136/8_tJuwoRM3dI.JPG?auto=compress%2Cformat&w=740&h=555&fit=max)
 
-**Blynk Mobile App: 
-[<img src="https://cdn.rawgit.com/simple-icons/simple-icons/develop/icons/googleplay.svg" width="18" height="18" /> Google Play](https://play.google.com/store/apps/details?id=cloud.blynk) | 
-[<img src="https://cdn.rawgit.com/simple-icons/simple-icons/develop/icons/apple.svg" width="18" height="18" /> App Store](https://apps.apple.com/us/app/blynk-iot/id1559317868)**
+You must check out [PCBWAY](https://www.pcbway.com/) for ordering PCBs online for cheap!
 
-## Quickstart: Arduino + Ethernet shield
-
-* Download the Blynk app ([App Store](https://apps.apple.com/us/app/blynk-iot/id1559317868), [Google Play](https://play.google.com/store/apps/details?id=cloud.blynk))
-* Get the Auth Token from the app
-* Import this library to Arduino IDE. Guide [here](http://arduino.cc/en/guide/libraries)
-* In Arduino IDE, select File -> Examples -> Blynk -> Boards_Ethernet -> Arduino_Ethernet
-* Update Auth Token in the sketch and upload it to Arduino
-* Connect your Arduino with Ethernet shield to the internet
-
-When you are connected - check the included examples on how to use different types of connections (transports) and explore Blynk features. You can combine any example for your hardware + transport + features.
-
-## Supported boards, Ethernet, WiFi, Bluetooth, GSM, Serial, USB...
-
-Full list of supported hardware is [here](https://github.com/blynkkk/blynkkk.github.io/blob/master/SupportedHardware.md).  
-Check out our Examples Browser: http://examples.blynk.cc
-
-## Documentation and other helpful links
-
-[Full Blynk Documentation](https://docs.blynk.io) - a complete guide on Blynk features  
-[Community (Forum)](http://community.blynk.cc) - join a 500,000 Blynk community to ask questions and share ideas  
-[Help Center](http://help.blynk.cc) - helpful articles on various Blynk aspects  
-[Code Examples Browser](http://examples.blynk.cc) - browse examples to explore Blynk possibilities  
-[Official Website](https://blynk.io)
-
-**Social Media:**
-
-[Facebook](https://www.fb.com/blynkapp) | 
-[Twitter](https://twitter.com/blynk_app) | 
-[Youtube](https://www.youtube.com/blynk) | 
-[Instagram](https://www.instagram.com/blynk.iot/) | 
-[LinkedIn](https://www.linkedin.com/company/b-l-y-n-k/)
-
-## Blynk libraries for other platforms
-* [Python, MicroPython](https://github.com/blynkkk/lib-python)
-
-## Libraries by community
-* [Node.js, Espruino, Browsers](https://github.com/vshymanskyy/blynk-library-js)
-* [Python, MicroPython](https://github.com/vshymanskyy/blynk-library-python)
-* [Particle](https://github.com/vshymanskyy/blynk-library-spark)
-* [Lua, OpenWrt, NodeMCU](https://github.com/vshymanskyy/blynk-library-lua)
-* [OpenWrt packages](https://github.com/vshymanskyy/blynk-library-openwrt)
-* [MBED](https://developer.mbed.org/users/vshymanskyy/code/Blynk/)
-* [Node-RED for Blynk IoT](https://flows.nodered.org/node/node-red-contrib-blynk-iot) and [for old Blynk](https://www.npmjs.com/package/node-red-contrib-blynk-ws)
-* [LabVIEW](https://github.com/juncaofish/NI-LabVIEWInterfaceforBlynk)
-* [C#](https://github.com/sverrefroy/BlynkLibrary)
-
-## Contributing
-We accept contributions from our community: stability bugfixes, new hardware support, or any other improvements.  
-[Here](https://github.com/blynkkk/blynk-library/labels/help%20wanted) is a list of what you could help with.
-
-### License
-This project is released under The MIT License (MIT)
+You get 10 good-quality PCBs manufactured and shipped to your doorstep for cheap. You will also get a discount on shipping on your first order. Upload your Gerber files onto PCBWAY to get them manufactured with good quality and quick turnaround time. [PCBWay](https://www.pcbway.com/) now could provide a complete product solution, from design to enclosure production. Check out their online Gerber viewer function. With reward points, you can get free stuff from their gift shop.
